@@ -4,90 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>India Auto Jobs</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-    }
-    header {
-      background: #0044cc;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    nav {
-      background: #003399;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    .container {
-      padding: 20px;
-    }
-    .job-card {
-      background: white;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #0044cc;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <!-- Header -->
   <header>
     <h1>India Auto Jobs</h1>
-    <p>Find Your Career in the Automobile Industry 🚗</p>
+    <input type="text" placeholder="Search jobs, skills, companies...">
+    <input type="text" placeholder="Location">
+    <button>Search</button>
   </header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Jobs</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
+  <!-- Filters -->
+  <aside>
+    <h3>Filters</h3>
+    <label><input type="checkbox"> Fresher</label><br>
+    <label><input type="checkbox"> 1-3 Years</label><br>
+    <label><input type="checkbox"> 3+ Years</label><br>
+  </aside>
 
-  <div class="container">
-    <h2>Latest Job Openings</h2>
-    
+  <!-- Job Listings -->
+  <main>
     <div class="job-card">
-      <h3>Mechanical Engineer - Tata Motors</h3>
-      <p><strong>Location:</strong> Pune</p>
-      <p><strong>Experience:</strong> 0-2 Years</p>
-      <p><strong>Apply:</strong> <a href="#">Click Here</a></p>
+      <h2>Mechanical Engineer</h2>
+      <p>Company: Tata Motors</p>
+      <p>Location: Pune</p>
+      <p>Salary: ₹3.5 - 6 LPA</p>
+      <button>Apply Now</button>
     </div>
 
     <div class="job-card">
-      <h3>Production Supervisor - Maruti Suzuki</h3>
-      <p><strong>Location:</strong> Gurugram</p>
-      <p><strong>Experience:</strong> 1-3 Years</p>
-      <p><strong>Apply:</strong> <a href="#">Click Here</a></p>
+      <h2>Production Supervisor</h2>
+      <p>Company: Mahindra & Mahindra</p>
+      <p>Location: Nashik</p>
+      <p>Salary: ₹4 - 7 LPA</p>
+      <button>Apply Now</button>
     </div>
-
-    <div class="job-card">
-      <h3>Quality Inspector - Hero MotoCorp</h3>
-      <p><strong>Location:</strong> Haridwar</p>
-      <p><strong>Experience:</strong> Fresher Eligible</p>
-      <p><strong>Apply:</strong> <a href="#">Click Here</a></p>
-    </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 India Auto Jobs | All Rights Reserved</p>
-  </footer>
-
+  </main>
 </body>
 </html>
+
